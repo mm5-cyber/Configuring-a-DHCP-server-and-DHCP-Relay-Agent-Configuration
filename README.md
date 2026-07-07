@@ -10,8 +10,6 @@ This Home Lab project aims to prevent unauthorised access to my network, to prot
 - Cisco IOS CLI Command Foundations
 - IP Addressing & Subnetting
 - Troubleshooting: Using diagnostic commands like ping, traceroute, show ip interface brief, and show cdp neighbors to isolate connectivity issues and routing loops
-  Example:
-  <img width="375" height="322" alt="image" src="https://github.com/user-attachments/assets/abb7d9e2-acb9-44a4-8a12-2e0e0ada76c5" />
 
 
 ### Tools used
@@ -38,7 +36,7 @@ The physical tab highlights a hierarchial level of physical containers. Going fr
 
 By following a YouTube tutorial by DigiDev on the foundations of Cisco Packet Tracer, I was able to gain a comprehensive understanding of how end devices connect with each other on different networks, how switches and routers work, and what servers allow you to do. These of which, I found difficult to grasp  by just reading documentation alone. 
 
-I learnt how to:
+Using this resource, I learnt how to:
 
 - Navigate the Interface
 
@@ -49,11 +47,24 @@ I learnt how to:
   <img width="357" height="442" alt="image" src="https://github.com/user-attachments/assets/262f630f-cd07-48f4-980b-fcee8285ebed" />
 
 
-- Create a connection between two computers, and assigning them both static IP addresses.
+- Create a connection between two computers through the use of Copper Cross-over Cables connectied via each computers fast ethernet port (fa0). 
 
-  <img width="344" height="120" alt="image" src="https://github.com/user-attachments/assets/d7808a53-0283-41bd-88c3-5de5f8589f45" />
+  <img width="325" height="109" alt="image" src="https://github.com/user-attachments/assets/e7fe46dc-df8c-43be-aa1d-5aafa6e0b6a4" />
+
+  To actually enable the communication, each computer was assigned with a seperate static IP addres within their IP Configuration section, on the simulated Desktop tab.
+
+  <img width="715" height="250" alt="image" src="https://github.com/user-attachments/assets/bedba3c0-92ad-441b-8f9d-b7470c7c271b" />
+
   <img width="905" height="440" alt="image" src="https://github.com/user-attachments/assets/197873ad-2ceb-41c2-8fe7-6d70db06b313" />
 
+- Simulate a "Star Topology Network" by connecting end devices to a common switch via Copper Straight-Through cabling.
+
+  <img width="354" height="240" alt="image" src="https://github.com/user-attachments/assets/f3569994-b90a-4ee5-b715-0cb076bae997" />
+
+
+- Connect Devices together between two switches
+
+  <img width="940" height="372" alt="image" src="https://github.com/user-attachments/assets/519f5f99-5a47-4c82-a01d-df1a2e21dbde" />
 
 
 - Connect devices wirelessly through an "Access Point"
