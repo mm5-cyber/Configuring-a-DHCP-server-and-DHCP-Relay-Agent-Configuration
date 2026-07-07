@@ -1,5 +1,7 @@
 # Configuring-a-DHCP-server-and-DHCP-Relay-Agent-Configuration
 
+This report is currently in progress
+
 ## Objective
 
 This Home Lab project aims to prevent unauthorised access to my network, to protect sensitive data. The router acts as the main gateway between the internet and your home/office devices, securing it prevents it from becoming a "front door" for attackers.The primary focus of this is to access the web server of the router, and make adjustments to its configurations to prioritie security over availability. 
