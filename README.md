@@ -36,18 +36,16 @@ The physical tab highlights a hierarchial level of physical containers. Going fr
 
 By following a YouTube tutorial by DigiDev on the foundations of Cisco Packet Tracer, I was able to gain a comprehensive understanding of how end devices connect with each other on different networks, how switches and routers work, and what servers allow you to do. These of which, I found difficult to grasp  by just reading documentation alone. 
 
-Using this resource, I learnt how to:
+Using this resource, these are the projects that I followed: 
 
-- Navigate the Interface
+1.  Navigating the Interface & Adding / Removing Modules on a device
 
  <img width="731" height="556" alt="image" src="https://github.com/user-attachments/assets/7bb799c7-75d3-4c53-924f-d18d8b15d931" />
 
-- Add / Remove Modules on a device
-
-  <img width="357" height="442" alt="image" src="https://github.com/user-attachments/assets/262f630f-cd07-48f4-980b-fcee8285ebed" />
+ <img width="357" height="442" alt="image" src="https://github.com/user-attachments/assets/262f630f-cd07-48f4-980b-fcee8285ebed" />
 
 
-- Create a connection between two computers through the use of Copper Cross-over Cables connectied via each computers fast ethernet port (fa0). 
+2. Creating a connection between two computers through the use of Copper Cross-over Cables connectied via each computers fast ethernet port (fa0). 
 
   <img width="325" height="109" alt="image" src="https://github.com/user-attachments/assets/e7fe46dc-df8c-43be-aa1d-5aafa6e0b6a4" />
 
@@ -57,25 +55,30 @@ Using this resource, I learnt how to:
 
   <img width="905" height="440" alt="image" src="https://github.com/user-attachments/assets/197873ad-2ceb-41c2-8fe7-6d70db06b313" />
 
-- Simulate a "Star Topology Network" by connecting end devices to a common switch via Copper Straight-Through cabling.
+3.  Simulate a "Star Topology Network" by connecting end devices to a common switch via Copper Straight-Through cabling.
 
   <img width="354" height="240" alt="image" src="https://github.com/user-attachments/assets/f3569994-b90a-4ee5-b715-0cb076bae997" />
 
 
-- Connecting two switches together using Copper Cross-over cables.
+4.  Connecting two switches together using Copper Cross-over cables.
 
   <img width="940" height="372" alt="image" src="https://github.com/user-attachments/assets/519f5f99-5a47-4c82-a01d-df1a2e21dbde" />
 
-- Using the Physical Tab to place the two switches and their associated end devices in seperate "Wiring Closets", situated within the same building
+  Using the Physical Ta, I then situated the two switches and their associated end-devices into seperate "Wiring Closets", situated within the same building
 
   <img width="940" height="492" alt="image" src="https://github.com/user-attachments/assets/5c9ba595-1f84-4243-bea1-11ef20518e39" />
 
   <img width="419" height="694" alt="image" src="https://github.com/user-attachments/assets/2b023260-7362-466b-abc1-c628d18313b9" />
 
 
+5. Seperating switches and their respected devices into seperate subnets, these of which can then only be communicated with through a router.
+
+   <img width="940" height="546" alt="image" src="https://github.com/user-attachments/assets/5686a9a3-8806-411c-bc91-41239fc3a066" />
+
+   
 
 
-- Connect devices wirelessly through an "Access Point"
+7. Connect devices wirelessly through an "Access Point"
  
 <img width="666" height="436" alt="image" src="https://github.com/user-attachments/assets/9f6387e3-2a9f-43af-9d1e-9b3e4ef3b57e" />
 
