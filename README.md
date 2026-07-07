@@ -62,7 +62,7 @@ Using this resource, I learnt how to:
   <img width="354" height="240" alt="image" src="https://github.com/user-attachments/assets/f3569994-b90a-4ee5-b715-0cb076bae997" />
 
 
-- Connect Devices together between two switches
+- Connecting two switches together using Copper Cross-over cables.
 
   <img width="940" height="372" alt="image" src="https://github.com/user-attachments/assets/519f5f99-5a47-4c82-a01d-df1a2e21dbde" />
 
@@ -72,5 +72,5 @@ Using this resource, I learnt how to:
 <img width="666" height="436" alt="image" src="https://github.com/user-attachments/assets/9f6387e3-2a9f-43af-9d1e-9b3e4ef3b57e" />
 
 
-- Connect devices together using a switch, and troubleshoot connectivity using the ping command within the end-devices built-in CLI
+
 
