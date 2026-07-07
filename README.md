@@ -10,6 +10,9 @@ This Home Lab project aims to prevent unauthorised access to my network, to prot
 - Cisco IOS CLI Command Foundations
 - IP Addressing & Subnetting
 - Troubleshooting: Using diagnostic commands like ping, traceroute, show ip interface brief, and show cdp neighbors to isolate connectivity issues and routing loops
+  Example:
+  <img width="375" height="322" alt="image" src="https://github.com/user-attachments/assets/abb7d9e2-acb9-44a4-8a12-2e0e0ada76c5" />
+
 
 ### Tools used
 
@@ -35,11 +38,28 @@ The physical tab highlights a hierarchial level of physical containers. Going fr
 
 By following a YouTube tutorial by DigiDev on the foundations of Cisco Packet Tracer, I was able to gain a comprehensive understanding of how end devices connect with each other on different networks, how switches and routers work, and what servers allow you to do. These of which, I found difficult to grasp  by just reading documentation alone. 
 
-I learnt
+I learnt how to:
 
 - Navigate the Interface
 
+ <img width="731" height="556" alt="image" src="https://github.com/user-attachments/assets/7bb799c7-75d3-4c53-924f-d18d8b15d931" />
+
+- Add / Remove Modules on a device
+
+  <img width="357" height="442" alt="image" src="https://github.com/user-attachments/assets/262f630f-cd07-48f4-980b-fcee8285ebed" />
+
+
 - Create a connection between two computers, and assigning them both static IP addresses.
+
+  <img width="344" height="120" alt="image" src="https://github.com/user-attachments/assets/d7808a53-0283-41bd-88c3-5de5f8589f45" />
+  <img width="905" height="440" alt="image" src="https://github.com/user-attachments/assets/197873ad-2ceb-41c2-8fe7-6d70db06b313" />
+
+
+
+- Connect devices wirelessly through an "Access Point"
+ 
+<img width="666" height="436" alt="image" src="https://github.com/user-attachments/assets/9f6387e3-2a9f-43af-9d1e-9b3e4ef3b57e" />
+
 
 - Connect devices together using a switch, and troubleshoot connectivity using the ping command within the end-devices built-in CLI
 
