@@ -1,10 +1,9 @@
-# Configuring-a-DHCP-server-and-DHCP-Relay-Agent-Configuration
+# Cisco Packet Tracer: Fundamentals & Configuring-a-DHCP-server-and-DHCP-Relay-Agent-Configuration
 
-This report is currently in progress
 
 ## Objective
 
-This Home Lab project aims to prevent unauthorised access to my network, to protect sensitive data. The router acts as the main gateway between the internet and your home/office devices, securing it prevents it from becoming a "front door" for attackers.The primary focus of this is to access the web server of the router, and make adjustments to its configurations to prioritie security over availability. 
+To learn Networking Fundamentals using Cisco Packet Tracer, and using my knowledge gained from educational videos to create a networking scenario that I can effectively troubleshoot and fix. 
 
 ### Skills learned
 
@@ -182,13 +181,71 @@ However, let's take a look at PC1, which is located on the opposite subnet.
 
 <img width="2237" height="615" alt="image" src="https://github.com/user-attachments/assets/329aa872-4ad7-4d39-bf5d-0734a2754596" /> 
 
-The IP address is set to this computer is "169.254.82.235", and no default gateway is set. The IP address shown is known as an Automatic Private IP Address (APIPA). According to Lenovo, APIPA's only connect devices locally on the same subnet, and they are created only when no DHCP server is available. This is not what we want. The APIPA typically falls into the 169.254.x.x range. 
+The IP address is set to this computer is "169.254.82.235", and no default gateway is set. The IP address shown is known as an Automatic Private IP Address (APIPA). According to Lenovo, APIPA's only connect devices locally on the same subnet, and they are created only when no DHCP server is available. The APIPA typically falls into the 169.254.x.x range (Lenovo, 2026).  This is not what we want, as this clearly indicates that the DHCP server has failed to reach these devices.
+
+So I asked to myself, why is this happening? So I did some research. 
+
+## The Why? 
+
+According to Martin L, a user on the Cisco Community forum, a DHCP Packet is sent out as a "broadcast", which is when a networking device is sent to every device on a local network (L M, 2023). Routers block these requests by default for security reasons, and to prevent network congestion.
 
 
+## What is the fix? 
+
+After realising that the main issue has got to do with the router not allowing DHCP traffic through, I searched up a guide on how to allow this traffic through. This is where I found out about a DHCP Relay Agent, which allows the forwarding of DHCP broadcast messages to clients situated at a different subnet. 
+
+The video by "Network Engineer Stuff" showed me the exact router CLI commands needed to make this work (Network Engineer Stuff, 2025).
+
+<img width="477" height="153" alt="image" src="https://github.com/user-attachments/assets/757feaee-8f65-4a12-a1bf-5af74292e119" />
+
+The commands used: 
+
+Router>en - enables Privileged EXEC mode, allowing the use of administrative commands. It's like sudo in Linux. 
+
+Router#config t- configure terminal, allows changing system-wide settings of the router. 
+
+Router(config) #int Gig0/0 - Changes into interface configuration mode for Gig0/0 (192.168.1.x subnet). This allows the use of IP helper command to enable DHCP Relay. 
+
+Router(config-if)#ip helper-address 172.16.1.9 - It configures the DHCP Relay Agent, It allows the router to listen to the broadcast requests sent from a client, and forward them to the DHCP server on a different subnet. In the command, the IP used is the DHCP Server's static IP address. 
+
+Router(config-if)#^Z - Returns you out of configuration mode
+
+wr - Stands for "write memory", it saves the currently active configuration from RAM to NVRAM. Essentially ensuring that your changes are saved and applied the next time the device reboots. This means that you don't have to keep typing the commands listed above upon each startup. 
+
+
+## What I learned 
+
+I gained practical troubleshooting experience by:
+
+- Verifying default gateway configurations.
+
+- Ensuring DHCP pools match the correct subnet ranges.
+
+- Confirming the server’s static IP sits outside the DHCP scope.
+
+- Finding out that APIPA is a clear indicator of a DHCP failure 
+
+- Testing DHCP behaviour before and after relay configuration.
+
+Improved my understanding of: 
+
+- Broadcast vs unicast traffic
+
+- Router interface roles and gateway responsibilities
+
+- DHCP pool design
+
+- Relay agents and their role in enterprise networks
+
+- How routing and DHCP interact in multi‑subnet environments
 
 ## Credit 
 
 https://www.lenovo.com/us/en/glossary/what-is-apipa/ 
+
+https://www.youtube.com/watch?v=ty0HMs48U1k&t=2056s  
+
+https://community.cisco.com/t5/switching/packet-tracer-dhcp-server-not-assigning-ip-s-to-other-networks/td-p/4955813
 
 
 
