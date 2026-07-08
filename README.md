@@ -148,7 +148,50 @@ This is what the network topology of this project lookls like:
 
 <img width="1056" height="486" alt="image" src="https://github.com/user-attachments/assets/07705625-f414-45e4-b192-944fe325f960" /> 
 
+The left side of the router is the 192.168.1.x subnet, and the right side is the 172.16.1.x subnet. 
+
 The server is located on the 172.16.1.x subnet. 
+
+The server has two DHCP server pool configurations.  
+
+<img width="1084" height="753" alt="image" src="https://github.com/user-attachments/assets/7313bb3b-aabe-4704-8bf0-5e2667417338" />
+
+This one is for all the devices in the 192.168.1.x subnet. 
+
+<img width="1078" height="762" alt="image" src="https://github.com/user-attachments/assets/db0e8981-29d2-45b2-aa8b-019047c9b766" />
+
+This one is for all the devices in the 172.16.1.x subnet.  
+
+Each end device's IP Configurations are set to "DHCP" not "Static". This means that the end devices are waiting for the DHCP server to assign them their IP's. 
+
+The only devices with a static IP configuration are the router, and the Server itself. 
+
+The router's Gigabit Ethernet 0/0 Port is set to 192.168.1.1, and Gigbit Ethernet 0/1 is set to 172.16.1.1. Gig0/0 is the default gateway for the devices on the 192.168.1.x suvnet, and Gig0/1 is the default gateway for the devices on the 172.16.1.x subnet. 
+
+The server's static IP is set to 172.16.1.9, which is outside of the range of IP addresses it provides to the end devices. It's default gateway also has to be manually configured via static IP. This is so that clients can consistently find them without network disruptions. 
+
+## The problem
+
+The main issue with this network, is that the DHCP server cannot assign the IP addresses to the end devices on the other subnet. As you can see from this example below, the DHCP server has successfully assigned PC2 with the IP address of 172.16.1.10. In a seperate tab the default gateway has also been set to 172.16.1.1, which is what is intended happen. 
+
+<img width="2074" height="578" alt="image" src="https://github.com/user-attachments/assets/6647dcbe-0e5c-4aac-a3ee-2c9fd0fa32cc" />
+
+However, let's take a look at PC1, which is located on the opposite subnet.  
+
+<img width="2182" height="637" alt="image" src="https://github.com/user-attachments/assets/5dab6ddc-6d0f-4385-8331-52002640e003" /> 
+
+<img width="2237" height="615" alt="image" src="https://github.com/user-attachments/assets/329aa872-4ad7-4d39-bf5d-0734a2754596" /> 
+
+The IP address is set to this computer is "169.254.82.235", and no default gateway is set. The IP address shown is known as an Automatic Private IP Address (APIPA). According to Lenovo, APIPA's only connect devices locally on the same subnet, and they are created only when no DHCP server is available. This is not what we want. The APIPA typically falls into the 169.254.x.x range. 
+
+
+
+## Credit 
+
+https://www.lenovo.com/us/en/glossary/what-is-apipa/ 
+
+
+
 
 
 
