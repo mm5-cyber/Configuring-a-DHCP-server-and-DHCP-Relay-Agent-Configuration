@@ -89,7 +89,37 @@ Now the connections are established for each end device to successfully communic
 
 6. Connect devices wirelessly through an "Access Point"
  
-<img width="666" height="436" alt="image" src="https://github.com/user-attachments/assets/9f6387e3-2a9f-43af-9d1e-9b3e4ef3b57e" /> 
+<img width="666" height="436" alt="image" src="https://github.com/user-attachments/assets/9f6387e3-2a9f-43af-9d1e-9b3e4ef3b57e" />  
+
+To have devices connect to an access point wirelessly, the access point's "Port 1" had to be configured with an SSID (Service Set Identifier), Authentication Method (WPA2-PSK), and PSK (Pre-shared Key) Passphrase. This allows other devices to be able to find and connect to the access point through configuring their wireless networks. 
+
+However, the devices on their own (except the tablet) by default, were only able to connect to other devices through Ethernet. Therefore, I had to power off the devices and replace their Ethernet modules for a "WPC300N Adapter". The devices were then turned back on.  
+
+<img width="563" height="446" alt="image" src="https://github.com/user-attachments/assets/fbb3a147-45b8-4f02-a3ea-434d120be5a9" />  
+
+The devices were then able to connect to the Access Point through the "PC Wireless" section of their "Desktop Tab", simply through searching for the available network connection, and typing in the PSK. 
+
+
+<img width="562" height="460" alt="image" src="https://github.com/user-attachments/assets/302b2cd8-9493-4f37-8bda-aac4f6f2e14c" /> 
+
+However the signal of the connection is very weak, sitting at only 39%. That is when I switched from logical to physical mode, to place all of the devices into the same wiring closet, resulting in a signal strength of 100%. This demonstrates that Cisco Packet tracer takes into consideration the physical distance between each device. 
+
+<img width="1084" height="691" alt="image" src="https://github.com/user-attachments/assets/a8c3d821-ecea-4233-b95c-d3d70cfa1f67" />
+
+
+<img width="355" height="264" alt="image" src="https://github.com/user-attachments/assets/a401d22a-6fcd-46fd-9f72-bf772c68cd59" /> 
+
+7. Configuring a DHCP Server
+
+
+
+
+## Personal Project - 
+
+
+
+
+
 
 
 
