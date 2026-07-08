@@ -109,7 +109,40 @@ However the signal of the connection is very weak, sitting at only 39%. That is 
 
 <img width="355" height="264" alt="image" src="https://github.com/user-attachments/assets/a401d22a-6fcd-46fd-9f72-bf772c68cd59" /> 
 
-7. Configuring a DHCP Server
+7. Configuring a DHCP & Mail Server
+
+
+
+I connected a server to a simple Star Topology network. However, instead of manually assigning static IP's to each end device, I wanted to make the server automatically assign IP addresses through the Dynamic Host Protocol (DHCP) Service. By configuring the service as shown below, I was able to assign the IP address range of 192.168.1.10-20 to all end devices in the network. However, I did have to assign a static ip address of 102.168.1.9 to the server, to allow connectivity to happen. 
+
+<img width="1290" height="667" alt="image" src="https://github.com/user-attachments/assets/ea1d774c-2847-4cb3-9a51-ce20109b1e3e" />
+
+As long as each end device has their IP configuration set to DHCP, and they are in the same network, they would automatically recieve an IP address within the specific range that server pool has been configured to. 
+
+<img width="539" height="98" alt="image" src="https://github.com/user-attachments/assets/356b093f-14b0-46ce-80a4-aa4992d4ee8b" /> 
+
+Using the same network topology, I configured the server to allow email services. I added two users under the server's email service tab, falling under the domain of gmail.com. 
+
+
+<img width="1318" height="567" alt="image" src="https://github.com/user-attachments/assets/adbd7e4c-a595-4585-8769-4556f585d013" /> 
+
+Then on the respective end devices, I plugged in the same email and login names into their email configuration settings section. 
+
+
+<img width="1338" height="666" alt="image" src="https://github.com/user-attachments/assets/17a996e4-a9eb-49f3-b094-83d2867a2ac9" /> 
+
+I tested the connectivity by sending a message from "Mike's PC" to "Mitch's PC" 
+
+
+<img width="1379" height="670" alt="image" src="https://github.com/user-attachments/assets/ad0ec580-1d70-46d7-9641-cd2865fdf076" />
+
+If the username, login, and domains didn't match to the email server, than the message wouldn't be able to transmit from one computer to another. 
+
+
+
+
+
+
 
 
 
