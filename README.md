@@ -77,7 +77,14 @@ Using this resource, these are the projects that I followed:
 
    <img width="940" height="546" alt="image" src="https://github.com/user-attachments/assets/5686a9a3-8806-411c-bc91-41239fc3a066" />
 
-   
+ The switches connect to the Cisco 1941 router via copper straight-through cables into the router’s Gigabit Ethernet ports. The router used only has two Gigabit Ethernet ports, which is fine for this prac. 
+ 
+The devices connected to Switch 1 (left side of the diagram) fall under the IP address range of 192.168.1.x The devices of switch two (right side of the diagram) are set to 172.16.1.x.  
+
+In the router, I configured the default gateway of Gig 0/0 to 192.168.1.1, and for Gig 0/1, I used 172.16.1.1.
+Within the router’s config setting for the Gigabit Ethernet connections. The “Port Status” setting had to be checked. This is pretty much the power-on button for the connections. 
+
+Now the connections are established for each end device to successfully communicate with the other, even if they are situated in seperate subnets. This couldn’t be done through switch connection alone, and it helped me understand the importance of routers in network architecture.
 
 
 7. Connect devices wirelessly through an "Access Point"
