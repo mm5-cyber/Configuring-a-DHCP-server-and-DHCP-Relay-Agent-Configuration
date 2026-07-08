@@ -65,7 +65,7 @@ Using this resource, these are the projects that I followed:
 
   <img width="940" height="372" alt="image" src="https://github.com/user-attachments/assets/519f5f99-5a47-4c82-a01d-df1a2e21dbde" />
 
-  Using the Physical Ta, I then situated the two switches and their associated end-devices into seperate "Wiring Closets", situated within the same building
+  Using the Physical Tab, I situated the two switches and their associated end-devices into seperate "Wiring Closets", situated within the same building
 
   <img width="940" height="492" alt="image" src="https://github.com/user-attachments/assets/5c9ba595-1f84-4243-bea1-11ef20518e39" />
 
