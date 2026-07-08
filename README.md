@@ -144,7 +144,14 @@ If the username, login, and domains didn't match to the email server, than the m
 
 My personal project was heavily influences by projects 5. and 7. The main goal is to have end devices recieve their IP's on a DHCP server that is located on a completely seperate subnet. The only way that they could connect is through a router. I thought this project would be fairly straight-forward but I came across an issue in which I had to troubleshoot on my own.
 
-This is what the network topology of this project lookls like: 
+This is what the network topology of this project lookls like:  
+
+<img width="1056" height="486" alt="image" src="https://github.com/user-attachments/assets/07705625-f414-45e4-b192-944fe325f960" /> 
+
+The server is located on the 172.16.1.x subnet. 
+
+
+
 
 
 
